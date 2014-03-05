@@ -8,12 +8,31 @@ public abstract class Player implements Character {
 	public Player(String name) {
 		this.name = name;
 		position = 0;
+		dice = new Dice();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getPosition() {
+		return position;
+	}
+
+	public void setPosition(int position) {
+		this.position = position;
+	}
+
+	public Dice getDice() {
+		return dice;
 	}
 
 	@Override
 	public int roll() {
-		// TODO Auto-generated method stub
-		return 0;
+		int value = 0;
+		for (int i = 0; i < dice.getRolls(); i++)
+			value += (int)(Math.random()*dice.getSides())+1;
+		return value;
 	}
 
 }

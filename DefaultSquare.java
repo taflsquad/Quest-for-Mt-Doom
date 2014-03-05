@@ -12,6 +12,11 @@ public abstract class DefaultSquare implements Square {
 	}
 
 	@Override
+	public void moveHere(Player p) {
+		p.setPosition(this.position);
+	}
+
+	@Override
 	public int compareTo(Square o) {
 		return this.position - ((DefaultSquare) o).getPosition();
 	}

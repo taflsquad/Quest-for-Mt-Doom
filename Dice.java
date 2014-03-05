@@ -11,5 +11,20 @@ public class Dice {
 		this.rolls = 2;
 		this.sides = 6;
 	}
-	
+
+	public int getRolls() {
+		return rolls;
+	}
+
+	public void setRolls(int rolls) {
+		this.rolls = rolls;
+	}
+
+	public int getSides() {
+		return sides;
+	}
+
+	public void setSides(int sides) {
+		this.sides = sides;
+	}
 }
