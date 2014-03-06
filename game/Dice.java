@@ -1,4 +1,4 @@
-package questForMtDoom;
+package questForMtDoom.game;
 
 public class Dice {
 	private int rolls;

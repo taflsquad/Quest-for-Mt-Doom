@@ -1,12 +1,14 @@
-package questForMtDoom;
+package questForMtDoom.game;
 
 public abstract class Player implements Character {
 	private String name;
+	private String classType;
 	private int position;
 	private Dice dice;
 
-	public Player(String name) {
+	public Player(String name, String classType) {
 		this.name = name;
+		this.classType = classType;
 		position = 0;
 		dice = new Dice();
 	}

@@ -1,4 +1,4 @@
-package questForMtDoom;
+package questForMtDoom.game;
 
 public abstract class DefaultSquare implements Square {
 	private int position;
