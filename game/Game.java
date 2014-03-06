@@ -146,8 +146,9 @@ public class Game {
 		 */
 		do {
 			
-			write("\n\n" + players.get(turn).getName() + "'s turn. Press <ENTER>"
-					+ " to roll dice.\n");
+			write("\n\n" + players.get(turn).getName() + "'s turn. You are "
+					+ "currently at square " + players.get(turn).getPosition() 
+					+ "\nPress <ENTER>" + " to roll dice.\n");
 			try {
 				action = action(in);
 			} catch (Exception e) {
