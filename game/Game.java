@@ -27,7 +27,7 @@ public class Game {
 		
 		board.add(new HomeSquare(0)); 
 		for(int p : position) {
-			board.add((Math.random()<0.2) ? new ResetSquare(p) : new EmptySquare(p));
+			board.add((Math.random()<0.2) ? new ResetSquare(p) : new MobSquare(p));
 		}
 		
 		Collections.sort(board);
