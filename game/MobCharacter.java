@@ -1,12 +1,19 @@
-package questForMtDoom;
+package questForMtDoom.game;
 
-public abstract class MobCharacter implements Character {
+public class MobCharacter{
 	
 	private String name;
 	private String theme;
 	private int level;
 	private Dice dice;
 	 
+	//Constructor//
+		public MobCharacter(String name, int level) {
+			this.name = name;
+			theme = "";
+			this.level = level;
+			dice = new Dice();
+		}
 	
 	//Getters and setters ------------------
 	
@@ -44,16 +51,8 @@ public abstract class MobCharacter implements Character {
 
 	//---------------------------------------
 	
-	//Konstruktør//
-	public MobCharacter() {
-		
-	}
+	
 
 	
-	@Override
-	public int roll() {
-		
-		return 0;
-	}
 
 }
