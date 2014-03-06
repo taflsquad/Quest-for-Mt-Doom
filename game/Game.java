@@ -27,7 +27,7 @@ public class Game {
 		
 		board.add(new HomeSquare(0)); 
 		for(int p : position) {
-			board.add(new EmptySquare(p));
+			board.add((Math.random()<0.2) ? new ResetSquare(p) : new EmptySquare(p));
 		}
 		
 		Collections.sort(board);
@@ -58,7 +58,8 @@ public class Game {
 		Scanner in = new Scanner(System.in);
 		
 		List<Player> players = fetchPlayers(in);	// generate players
-		List<DefaultSquare> board = generateBoard(40);	// generate board
+		List<DefaultSquare> board = generateBoard(players.get(0).getDice()
+				.getRolls()*20);	// generate board
 		
 		int move, dice, turn;
 		move = dice = turn = 0;

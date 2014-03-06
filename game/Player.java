@@ -5,6 +5,7 @@ public abstract class Player implements Character {
 	private String classType;
 	private int position;
 	private Dice dice;
+	private int lastTavern;
 
 	public Player(String name, String classType) {
 		this.name = name;
@@ -17,6 +18,10 @@ public abstract class Player implements Character {
 		return name;
 	}
 
+	public String getClassType() {
+		return classType;
+	}
+
 	public int getPosition() {
 		return position;
 	}
@@ -27,6 +32,14 @@ public abstract class Player implements Character {
 
 	public Dice getDice() {
 		return dice;
+	}
+
+	public int getLastTavern() {
+		return lastTavern;
+	}
+
+	public void setLastTavern(int lastSafeHouse) {
+		this.lastTavern = lastSafeHouse;
 	}
 
 	@Override
