@@ -1,4 +1,5 @@
-package questForMtDoom.game;
+
+  package questForMtDoom.game;
 
 import java.util.ArrayList;
 import java.util.Collections;

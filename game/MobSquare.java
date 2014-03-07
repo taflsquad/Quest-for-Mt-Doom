@@ -16,6 +16,12 @@ public class MobSquare extends DefaultSquare {
 		
 	}
 	
+	@Override
+	public String[] initStories() {
+		
+		return new String[] {"SI","SD"};
+	}
+
 	public MobSquare(int position) {
 		super(position);
 	}
