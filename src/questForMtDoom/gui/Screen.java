@@ -33,7 +33,7 @@ public class Screen extends JPanel implements Runnable{
 		
 			for (int i = 0;i<tileset_Forest.length;i++){
 			tileset_Forest[i] = new ImageIcon("res/daImage.png").getImage();
-			tileset_Forest[i] = createImage(new FilteredImageSource(tileset_Forest[i].getSource(), new CropImageFilter(0,128*i,128,128)));
+			tileset_Forest[i] = createImage(new FilteredImageSource(tileset_Forest[i].getSource(), new CropImageFilter(0,64*i,64,64)));
 			
 			}
 		save.loadSave(new File("save/boardLayout.fzk"));

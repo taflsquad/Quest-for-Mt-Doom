@@ -5,12 +5,12 @@ package questForMtDoom.gui;
 	import java.awt.*;
 	public class Frame extends JFrame {
 		public static String title = "Quest For Mt.Doom";
-		public static Dimension size = new Dimension(700, 550);
+		public static Dimension size = new Dimension(1296, 800);
 	 	
 		public Frame(){
 			setTitle(title);
 			setSize(size);
-			setResizable(true);
+			setResizable(false);
 			setLocationRelativeTo(null);
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			

@@ -4,7 +4,7 @@ import java.awt.*;
 public class Room {
 	public int worldWidth = 20;
 	public int worldHeight = 5;
-	public int blockSize = 128;
+	public int blockSize = 64;
 	
 	public Block[][] block;
 	
