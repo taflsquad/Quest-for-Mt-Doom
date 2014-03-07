@@ -1,11 +1,14 @@
 package questForMtDoom.game;
 
 public abstract class DefaultSquare implements Square {
+	
 	private int position;
+	private Region region;
 	private String[] stories;
 
 	public DefaultSquare(int position) {
 		this.position = position;
+		setRegion(Region.FOREST);
 		stories = initStories();
 	}
 
@@ -13,6 +16,14 @@ public abstract class DefaultSquare implements Square {
 		return position;
 	}
 	
+	public Region getRegion() {
+		return region;
+	}
+
+	public void setRegion(Region region) {
+		this.region = region;
+	}
+
 	public String[] getStories() {
 		return stories;
 	}
@@ -26,6 +37,7 @@ public abstract class DefaultSquare implements Square {
 
 	@Override
 	public void moveHere(Player p) {
+		System.out.println("You are now in the " + region.name() + " region.");
 		p.setPosition(this.position);
 		System.out.println(stories[(int) (Math.random()*stories.length)]);
 	}
