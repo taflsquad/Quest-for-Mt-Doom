@@ -59,11 +59,7 @@ public class Screen extends JPanel implements Runnable{
 		g.setColor(new Color(70,70,70));
 		g.fillRect(0, 0, getWidth(), getHeight());
 		g.setColor(new Color(0,0,0));
-		g.drawLine(room.block[0][0].x-1, 0, room.block[0][0].x-1, room.block[room.worldHeight-1][0].y-1 + room.blockSize + 1);//Draw left line
-		g.drawLine(room.block[0][0].x-1, 0, 
-				room.block[0][room.worldWidth-1].x + room.blockSize, room.block[room.worldHeight-1][0].y-1 + room.blockSize + 1);//draw right line
-		g.drawLine(room.block[0][0].x, room.block[room.worldHeight-1][0].y + room.blockSize,
-				room.block[0][room.worldWidth-1].x + room.blockSize,  room.block[room.worldHeight-1][0].y + room.blockSize);
+		
 		
 		room.draw(g); //Drawing the room!
 		store.draw(g); //Drawing the store!
