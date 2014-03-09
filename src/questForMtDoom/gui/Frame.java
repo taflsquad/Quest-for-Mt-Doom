@@ -10,7 +10,7 @@ package questForMtDoom.gui;
 		public Frame(){
 			setTitle(title);
 			setSize(size);
-			setResizable(false);
+			setResizable(true);
 			setLocationRelativeTo(null);
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			
@@ -21,7 +21,7 @@ package questForMtDoom.gui;
 		public void init(){
 			setLayout(new GridLayout(1 , 1 , 0 , 0));
 			
-			Screen screen = new Screen();
+			Screen screen = new Screen(this);
 			add(screen);
 			
 			

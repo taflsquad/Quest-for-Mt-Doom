@@ -3,6 +3,8 @@ package questForMtDoom.gui;
 import java.awt.event.*;
 import java.awt.*;
 
+import javax.swing.text.Position;
+
 public class KeyHandel implements MouseMotionListener, MouseListener{
 
 	public void mouseClicked(MouseEvent e) {
@@ -42,8 +44,9 @@ public class KeyHandel implements MouseMotionListener, MouseListener{
 
 	
 	public void mouseMoved(MouseEvent e) {
-		Screen.mse = new Point((e.getX()) + ((Frame.size.width) - (Screen.myWidth/2)),
-				(e.getY()) + ((Frame.size.height) - (Screen.myHeight)/2));
+		Screen.mse = new Point((e.getX()) - ((Frame.size.width) - (Screen.myWidth/2)),
+				(e.getY()) - ((Frame.size.height) - (Screen.myHeight)/2));
+		
 		
 	}
 	

@@ -23,7 +23,9 @@ public class Screen extends JPanel implements Runnable{
 	public static Store store;
 	
 	
-	public Screen() {
+	public Screen(Frame frame) {
+		frame.addMouseListener(new KeyHandel());
+		frame.addMouseMotionListener(new KeyHandel());
 		thread.start();
 		setBackground(Color.BLACK);
 	}
