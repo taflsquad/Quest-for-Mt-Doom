@@ -38,14 +38,14 @@ public class KeyHandel implements MouseMotionListener, MouseListener{
 
 	
 	public void mouseDragged(MouseEvent e) {
-		Screen.mse = new Point((e.getX()) + ((Frame.size.width) - (Screen.myWidth/2)),
-				(e.getY()) + ((Frame.size.height) - (Screen.myHeight)/2));		
+		Screen.mse = new Point((e.getX()) - ((Frame.size.width - Screen.myWidth)/2),
+				(e.getY()) + ((Frame.size.height - (Screen.myHeight)) - (Frame.size.width - Screen.myWidth)/2));		
 	}
 
 	
 	public void mouseMoved(MouseEvent e) {
-		Screen.mse = new Point((e.getX()) - ((Frame.size.width) - (Screen.myWidth/2)),
-				(e.getY()) - ((Frame.size.height) - (Screen.myHeight)/2));
+		Screen.mse = new Point((e.getX()) - ((Frame.size.width - Screen.myWidth)/2),
+				(e.getY()) + ((Frame.size.height - (Screen.myHeight)) - (Frame.size.width - Screen.myWidth)/2));
 		
 		
 	}
