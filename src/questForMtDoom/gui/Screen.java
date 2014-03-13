@@ -12,7 +12,7 @@ public class Screen extends JPanel implements Runnable{
 	public static int myWidth, myHeight;
 	
 	public static Image[] tileset_Forest = new Image[100];
-	public static Image[] roll_button_res = new Image[100];
+	//public static Image[] roll_button_res = new Image[100];
 	
 	public static boolean isFirst = true;
 	
@@ -20,7 +20,7 @@ public class Screen extends JPanel implements Runnable{
 	
 	public static Room room;
 	public static Save save;
-	public static RollButton store;
+	//public static RollButton store;
 	
 	
 	public Screen(Frame frame) {
@@ -33,17 +33,15 @@ public class Screen extends JPanel implements Runnable{
 	public void define(){
 		room = new Room();
 		save = new Save();
-		store = new RollButton();
+		//store = new RollButton();
 		
 		
-		
-		
-			for (int i = 0;i<tileset_Forest.length;i++){
+		for (int i = 0;i<tileset_Forest.length;i++){
 			tileset_Forest[i] = new ImageIcon("res/daImage.png").getImage();
 			tileset_Forest[i] = createImage(new FilteredImageSource(tileset_Forest[i].getSource(), new CropImageFilter(0,64*i,64,64)));
 			
-			}
-		roll_button_res[0] = new ImageIcon("res/RollButton.png").getImage();
+		}
+		//roll_button_res[0] = new ImageIcon("res/RollButton.png").getImage();
 			
 		save.loadSave(new File("save/boardLayout.fzk"));
 		
@@ -64,7 +62,7 @@ public class Screen extends JPanel implements Runnable{
 		
 		
 		room.draw(g); //Drawing the room!
-		store.draw(g); //Drawing the store!
+		//store.draw(g); //Drawing the store!
 	}
 	
 	public void run(){

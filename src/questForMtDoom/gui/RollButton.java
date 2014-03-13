@@ -43,7 +43,7 @@ public class RollButton {
 							
 				}
 					
-			g.drawImage(Screen.roll_button_res[0], button[i].x , button[i].y , button[i].width
+			g.drawImage(Hud.roll_button_res[0], button[i].x , button[i].y , button[i].width
 					, button[i].height, null);
 		}
 		g.fillRect(buttonCoins.x,buttonCoins.y,buttonCoins.width,buttonCoins.height);

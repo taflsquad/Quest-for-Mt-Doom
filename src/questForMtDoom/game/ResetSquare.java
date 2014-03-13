@@ -23,7 +23,7 @@ public class ResetSquare extends DefaultSquare {
 
 	@Override
 	public String[] initStories() {
-		return new String[] {"Your home gem malfunctioned and accidently"
+		return new String[] {"Your home gem malfunctioned and accidently\n"
 				+ " teleported you back to your last visited tavern."};
 	}
 
