@@ -32,6 +32,7 @@ public class MobSquare extends DefaultSquare {
 		
 			 
 		
+		@SuppressWarnings("resource") // Scanner closed in main
 		Scanner inn = new Scanner(System.in);
 		super.moveHere(p);
 		MobCharacter creep = GenerateCreep();

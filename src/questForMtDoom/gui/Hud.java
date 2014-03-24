@@ -29,6 +29,9 @@ public class Hud extends JPanel {
 		console.setForeground(Color.WHITE);
 		rollButton.setBackground(new Color(70,70,70));
 		
+		console.setLineWrap(true);
+		console.setWrapStyleWord(true);
+		
 		add(rollButton);
 		add(console);
 	}
